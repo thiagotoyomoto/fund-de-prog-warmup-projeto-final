@@ -28,7 +28,12 @@ void negativo(Imagem* img, Imagem* out)
  *
  * Valor de retorno: a saída esperada é armazenada em out. */
 
-
+void binariza (Imagem* img, Imagem* out, unsigned char threshold) {
+    int i, j;
+    for(i = 0; i < img->altura; i++)
+        for(j = 0; j < img->largura; j++)
+            out->dados[0][i][j] = img->dados[0][i][j] >= threshold ? 255 : 0;
+}
 
 
 
