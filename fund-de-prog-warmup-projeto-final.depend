@@ -1,0 +1,22 @@
+# depslib dependency file v1.0
+1560348332 source:/home/thiago/UTFPR/Período/1/Fundamentos de Programação/Projetos Práticos/Projeto Prático 03/fund-de-prog-warmup-projeto-final/imagem.c
+	<stdlib.h>
+	<stdio.h>
+	<math.h>
+	"imagem.h"
+
+1560348332 /home/thiago/UTFPR/Período/1/Fundamentos de Programação/Projetos Práticos/Projeto Prático 03/fund-de-prog-warmup-projeto-final/imagem.h
+
+1574858112 source:/home/thiago/UTFPR/Período/1/Fundamentos de Programação/Projetos Práticos/Projeto Prático 03/fund-de-prog-warmup-projeto-final/main.c
+	<stdio.h>
+	<stdlib.h>
+	"imagem.h"
+
+1574858768 source:/home/thiago/UTFPR/Período/1/Fundamentos de Programação/Projetos Práticos/Projeto Prático 03/fund-de-prog-warmup-projeto-final/projetoImagens.c
+	<stdio.h>
+	<stdlib.h>
+	"projetoImagens.h"
+
+1574858766 /home/thiago/UTFPR/Período/1/Fundamentos de Programação/Projetos Práticos/Projeto Prático 03/fund-de-prog-warmup-projeto-final/projetoImagens.h
+	"imagem.h"
+

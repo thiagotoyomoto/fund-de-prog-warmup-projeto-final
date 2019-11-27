@@ -4,7 +4,7 @@
 
 void negativo(Imagem* img, Imagem* out);
 void binariza(Imagem* img, Imagem* out, unsigned char threshold);
-void filtroMedia(Imagem* img, Imagem* out, int winSize);
+void rgbParaEscalaDeCinza(Imagem *img, Imagem *out);
 
-// colocar também o protótipo para a função que computa os componentes conexos.
+// colocar tambÃ©m o protÃ³tipo para a funÃ§Ã£o que computa os componentes conexos.
 #endif

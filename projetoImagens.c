@@ -6,10 +6,10 @@
 /*----------------------------------------------------------------------------*/
 /** Negativo. Considera apenas o primeiro canal da imagem dada.
  *
- * Par‚metros: Imagem* img: imagem a processar. Olhamos somente o 1o canal.
- *             Imagem* out: imagem de saÌda
+ * Par√¢metros: Imagem* img: imagem a processar. Olhamos somente o 1o canal.
+ *             Imagem* out: imagem de sa√≠da
  *
- * Valor de retorno: a saÌda esperada È armazenada em out. */
+ * Valor de retorno: a sa√≠da esperada √© armazenada em out. */
 void negativo(Imagem* img, Imagem* out)
 {
     int i, j;
@@ -20,13 +20,13 @@ void negativo(Imagem* img, Imagem* out)
 }
 
 /*----------------------------------------------------------------------------*/
-/** BinarizaÁ„o. Considera apenas o primeiro canal da imagem dada.
+/** Binariza√ß√£o. Considera apenas o primeiro canal da imagem dada.
  *
- * Par‚metros: Imagem* img: imagem a binarizar. Olhamos somente o 1o canal.
- *             Imagem* out: imagem de saÌda. Processa apenas o 1o canal.
+ * Par√¢metros: Imagem* img: imagem a binarizar. Olhamos somente o 1o canal.
+ *             Imagem* out: imagem de sa√≠da. Processa apenas o 1o canal.
  *             unsigned char threshold: threshold.
  *
- * Valor de retorno: a saÌda esperada È armazenada em out. */
+ * Valor de retorno: a sa√≠da esperada √© armazenada em out. */
 void binariza (Imagem* img, Imagem* out, unsigned char threshold) {
     int i, j;
     for(i = 0; i < img->altura; i++)
@@ -34,5 +34,11 @@ void binariza (Imagem* img, Imagem* out, unsigned char threshold) {
             out->dados[0][i][j] = img->dados[0][i][j] >= threshold ? 255 : 0;
 }
 
+void rgbParaEscalaDeCinza(Imagem *img, Imagem *out) {
+    int i, j;
+    for(i = 0; i < img->altura; i++)
+        for(j = 0; j < img->largura; j++)
+            out->dados[0][i][j] = img->dados[0][i][j] * 0.3 + img->dados[1][i][j] * 0.59 + img->dados[2][i][j] * 0.11;
+}
 
 
