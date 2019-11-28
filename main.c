@@ -103,7 +103,10 @@ int main ()
                 #endif
                 break;
             case 5:
+                out = criaImagem(img->largura, img->altura, 1);
+                componentesConexos(img, out);
 
+                imprimeMatriz(out);
                 break;
             default:
                 printf("Opcao invalida!");
